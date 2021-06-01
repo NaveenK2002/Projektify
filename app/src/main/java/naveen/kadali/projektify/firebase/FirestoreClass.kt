@@ -1,6 +1,8 @@
 package naveen.kadali.projektify.firebase
 
+import android.content.Intent
 import android.util.Log
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
@@ -14,7 +16,8 @@ class FirestoreClass {
     private val mFireStore = FirebaseFirestore.getInstance()
 
     fun signInUser(activity: SignInActivity){
-        mFireStore.collection(Constants.USERS).document(getCurrentUserId()).get().addOnSuccessListener {document->
+        mFireStore.collection(Constants.USERS).document(getCurrentUserId()).get().addOnSuccessListener {
+                document->
             val loggedInUser = document.toObject(User::class.java)!!
             if(loggedInUser!=null)
                 activity.signInSuccess(loggedInUser)

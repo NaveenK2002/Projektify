@@ -42,6 +42,7 @@ class SignInActivity : BaseActivity() {
 
     fun signInSuccess (user: User){
         hideProgressDialog()
+        Toast.makeText(this@SignInActivity, "Sign In Success", Toast.LENGTH_SHORT)
         startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
@@ -63,7 +64,6 @@ class SignInActivity : BaseActivity() {
 
         if (validateForm(email, password)) {
             showProgressDialog(resources.getString(R.string.please_wait))
-
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     hideProgressDialog()
