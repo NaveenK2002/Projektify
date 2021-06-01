@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167163410942",
+    "project_id": "projektify-4a53e",
+    "storage_bucket": "projektify-4a53e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167163410942:android:be0615f8ed49082a9328af",
+        "android_client_info": {
+          "package_name": "naveen.kadali.projektify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167163410942-let7ch706oijkdeqhh9jrcfhivcp338g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzBN1c-gaiIa8TWzymLGhmXs-9_DNmvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167163410942-let7ch706oijkdeqhh9jrcfhivcp338g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
