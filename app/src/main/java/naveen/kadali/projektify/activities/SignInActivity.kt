@@ -2,10 +2,8 @@ package naveen.kadali.projektify.activities
 
 import android.content.Intent
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -13,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_sign_in.*
 import kotlinx.android.synthetic.main.activity_sign_in.et_email_sign_in
 import kotlinx.android.synthetic.main.activity_sign_in.et_password_sign_in
 import kotlinx.android.synthetic.main.activity_sign_up.*
-import kotlinx.android.synthetic.main.activity_sign_up.toolbar_sign_up_activity
 import kotlinx.android.synthetic.main.activity_sign_up.tv_title
 import naveen.kadali.projektify.R
 import naveen.kadali.projektify.firebase.FirestoreClass
@@ -68,7 +65,7 @@ class SignInActivity : BaseActivity() {
                 .addOnCompleteListener(this) { task ->
                     hideProgressDialog()
                     if (task.isSuccessful) {
-                        FirestoreClass().signInUser(this@SignInActivity)
+                        FirestoreClass().loadUserData(this@SignInActivity)
                     } else {
 
                         Toast.makeText(
