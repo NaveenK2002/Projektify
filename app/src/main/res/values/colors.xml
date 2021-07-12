@@ -8,4 +8,18 @@
     <color name="secondary_text_color">#7A8089</color>
 
     <color name="snackbar_error_color">#F72400</color>
+	
+	    <color name="divider_color">#EAEAEA</color>
+		
+		<color name="task_list_action_color">#F7F6FA</color>
+    <color name="task_list_title_view_bg_color">#F8F8F8</color>
+
+    <color name="main_primary_color">#FFFFFF</color>
+    <color name="main_secondary_color">#000000</color>
+    <color name="text_color_hint">#FFFFFF</color>
+    <color name="task_bar_color">#000000</color>
+    <color name="task_bar_items_color">#FFFFFF</color>
+    <color name="card_view_color">#FFFFFF</color>
+    <color name="text_color_dark">#000000</color>
+
 </resources>

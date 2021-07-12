@@ -2,32 +2,33 @@ package naveen.kadali.projektify.activities
 
 import android.content.Intent
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_intro.*
-import kotlinx.android.synthetic.main.activity_splash.tv_app_name
+import androidx.appcompat.app.AppCompatActivity
 import naveen.kadali.projektify.R
+import kotlinx.android.synthetic.main.activity_intro.*
 
-class IntroActivity : BaseActivity() {
+class  IntroActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
 
-        val typeFace: Typeface = Typeface.createFromAsset(assets, "OstrichSansInline-Regular.otf")
-        tv_app_name.typeface = typeFace
-        @Suppress("DEPRECATION")
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        btn_sign_up_intro.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
-        }
+        val typeFace: Typeface = Typeface.createFromAsset(assets, "OstrichSansInline-Regular.otf")
+        tv_app_name.typeface = typeFace
         btn_sign_in_intro.setOnClickListener {
-            startActivity(Intent(this, SignInActivity::class.java))
+
+            startActivity(Intent(this@IntroActivity, SignInActivity::class.java))
+        }
+
+        btn_sign_up_intro.setOnClickListener {
+
+            startActivity(Intent(this@IntroActivity, SignUpActivity::class.java))
         }
     }
-
 }

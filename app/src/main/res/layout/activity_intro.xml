@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/intro_background_gradient"
+    android:background="@color/main_primary_color"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".activities.IntroActivity">
@@ -15,24 +14,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/intro_screen_title_text_margin_top"
         android:text="@string/app_name"
-        android:textColor="#0A273C"
-        android:textSize="@dimen/intro_screen_title_text_size"
-        android:textStyle="bold">
-    </TextView>
+        android:textColor="@color/main_secondary_color"
+        android:textSize="100sp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/intro_screen_image_marginTop"
         android:contentDescription="@string/image_contentDescription"
-        android:src="@drawable/ic_task_image" />
+        android:src="@drawable/ic_task_image"
+        android:background="@color/main_primary_color"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/lets_get_started_text_marginTop"
         android:text="@string/let_s_get_started_text"
-        android:textColor="#FAFBFD"
+        android:background="@color/main_primary_color"
+        android:textColor="@color/main_secondary_color"
         android:textSize="@dimen/lets_get_started_text_size"/>
 
     <TextView
@@ -44,8 +44,9 @@
         android:gravity="center"
         android:lineSpacingExtra="@dimen/intro_text_line_spacing_extra"
         android:text="@string/intro_text_description"
-        android:textColor="#D7D9DC"
-        android:textSize="@dimen/intro_text_size" />
+        android:textColor="@color/main_secondary_color"
+        android:textSize="@dimen/intro_text_size"
+        android:background="@color/main_primary_color"/>
 
     <Button
         android:id="@+id/btn_sign_in_intro"
@@ -61,7 +62,7 @@
         android:paddingTop="@dimen/btn_paddingTopBottom"
         android:paddingBottom="@dimen/btn_paddingTopBottom"
         android:text="@string/sign_in"
-        android:textColor="@android:color/white"
+        android:textColor="@color/main_primary_color"
         android:textSize="@dimen/btn_text_size" />
 
     <Button
@@ -72,14 +73,12 @@
         android:layout_marginStart="@dimen/btn_marginStartEnd"
         android:layout_marginTop="@dimen/intro_screen_sign_up_btn_marginTop"
         android:layout_marginEnd="@dimen/btn_marginStartEnd"
-        android:background="@drawable/white_border_shape_button_rounded"
+        android:background="@drawable/yellow_gradient_black_button"
         android:foreground="?attr/selectableItemBackground"
         android:gravity="center"
         android:paddingTop="@dimen/btn_paddingTopBottom"
         android:paddingBottom="@dimen/btn_paddingTopBottom"
         android:text="@string/sign_up"
-        android:textColor="#0D0A5C"
+        android:textColor="@color/main_secondary_color"
         android:textSize="@dimen/btn_text_size" />
-
-
 </LinearLayout>

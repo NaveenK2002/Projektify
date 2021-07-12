@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/common_app_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Back to main page"
+            android:textColor="@color/task_bar_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+            android:gravity="left"
+            android:text="@string/app_about_section_title"
+            android:textColor="@color/main_secondary_color"
+            android:textSize="@dimen/authentication_description_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:justificationMode="inter_word"
+            android:text="\nProjektify is a project management application. When working in a group project, communication between peers is the most crucial element to success. Every other member should be aware of what one person is working upon at the time so that the work can be done as soon and as perfectly as possible. Projektify is built to make this process of communication as smooth as possible with the use of boards, cards and lists. People can be a part of many projects and with the feature of deadline time, you do not have to worry about missing work. One can assign people to tasks and everyone can see who’s working on what if they are working on a common project. This project was built by K Naveen of Amity University Noida pursuing B Tech CSE. This project is built under the guidance of Ms Seema Sharma as a part of NTCC."
+            android:textColor="@color/main_secondary_color"
+            android:background="@color/main_primary_color"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -4,20 +4,20 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/nav_header_main_background"
+    android:background="@color/main_secondary_color"
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
     
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/nav_user_image"
+        android:id="@+id/iv_user_image"
         android:layout_width="@dimen/nav_image_size"
         android:layout_height="@dimen/nav_image_size"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="16dp"
-        app:civ_border_color="@android:color/white"
-        app:civ_border_width="@dimen/nav_image_circular_border_width"
+        app:civ_border_color="@color/main_primary_color"
+        app:civ_border_width="1dp"
         android:contentDescription="@string/image_contentDescription"
         android:src="@drawable/ic_user_place_holder"/>
 
@@ -29,13 +29,12 @@
         android:layout_marginTop="@dimen/nav_content_margin_top"
         android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
         android:layout_marginBottom="@dimen/nav_content_margin_bottom"
-        android:textColor="@android:color/white"
+        android:textColor="@color/main_primary_color"
         android:textSize="@dimen/nav_user_name_text_size"
         tools:text="Username"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/nav_divider_height"
-        android:background="@color/colorAccent" />
-
+        android:background="#101920" />
 </LinearLayout>
